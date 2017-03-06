@@ -15,20 +15,20 @@
 <body>
 <div class="container">
 <form action="./index.html" method="get" align="center">
-<div class="form-group"  align="center">
- <label for="name">Name</label>
- <input id="name" type="text" name="name1" value=""/>
+<div class="form-group"   align="center">
+ <label  for="name">Name</label>
+ <input id="name" class="form-control" type="text"  placeholder="Name" name="name1" value=""/>
   </div>
  <div class="form-group">
-<label  for="password">Password</label>
-  <input id="password" type="password" name="password" value=""/>
+<label for="password">Password</label>
+  <input id="password" class="form-control" type="password"  placeholder="Password" name="password" value=""/>
   </div>
    <div class="form-group">
-  <label> Gender </label>
+  <label class="radio"> Gender </label>
   <input  type="radio" name="gender" value="male"/>Male
   <input  type="radio" name="gender" value="female"/>Female
   </div>
-  <div class="form-group">
+  <div  class="form-group">
   <label for="country">Country</label>
   <select name="country" id="country">
   <option value="">Select</option>
@@ -39,7 +39,7 @@
 <option value="UA">Ukraine</option>
   </select>
    </div>
-  <div class="dropdown">
+  <div  class="form-group" class="dropdown">
   <label for="birthday">When Is Your Birthday?</label><br>
   <select id="birthday" name="DOB[month]">
 <option value="">Month</option>
@@ -98,7 +98,7 @@
 <option>2003</option>
 </select>
  </div>
-  <div class="dropdown">
+  <div  class="form-group" class="dropdown" class="checkbox">
   <label>Your Hobbies:</label>
  <input type="checkbox" name="HOB[hobbies]" value="Rading"/>Reading
  <input type="checkbox" name="hobbies" value="Dancing"/>Dancing
@@ -106,7 +106,7 @@
  <input type="checkbox" name="hobbies" value="Drawing"/>Drawing
 
   </div>
- <div class="dropdown">
+ <div class="form-group" class="dropdown" class="radio" >
     <label>Choose Your Favorite Color</label>
 	<input  type="radio" name="color" value="black"/>Black
 	<input type="radio" name="color" value="white"/>White
@@ -114,7 +114,7 @@
 	<input type="radio" name="color" value="pink"/>Pink
 	</div>
   <label>
-  <input type="submit" name="submit" value="Submit">
+  <input type="submit"  class="btn btn-default" name="submit" value="Submit">
   </label>
 </form>
 </div>
