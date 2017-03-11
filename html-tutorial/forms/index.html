@@ -10,7 +10,16 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+ <style>
+     .btn-red{
+         background-color: palevioletred;
+         border-color: blueviolet;
+         color: azure;
+     }
+     .btn-red:hover{
+         color: gold;
+     }
+ </style>
 </head>
 
 <body>
@@ -61,7 +70,7 @@
                     <label class="col-sm-2 control-label" for="birthday">When Is Your Birthday?</label>
 
                         <div class="col-sm-4">
-                    <select class="form-control" id="birthday" name="DOB[month]">
+                    <select class="form-control" id="birthday" name="dob[month]">
 
                         <option value="">Month</option>
                         <option value="01">January</option>
@@ -79,7 +88,7 @@
                     </select>
                         </div>
                         <div class="col-sm-2">
-                    <select class="form-control" name="DOB[day]">
+                    <select class="form-control" name="dob[day]">
                         <option value="">Day</option>
                         <option value="01">1</option>
                         <option value="02">2 </option>
@@ -115,7 +124,7 @@
                     </select>
                         </div>
                         <div class="col-sm-4">
-                    <select class="form-control" name="DOB[year]">
+                    <select class="form-control" name="dob[year]">
                         <option value="">Year</option>
                         <option>2000</option>
                         <option>2001</option>
@@ -164,12 +173,17 @@
                     <input  id="red" type="radio" name="color" value="red"/>
                             Red
                         </label>
-                    <input id="pink" type="radio" name="color" value="pink"/><label for="pink">Pink</label>
+                        <label for="pink">
+                    <input id="pink" type="radio" name="color" value="pink"/>
+                            Pink
+                        </label>
                     </div>
                 </div>
-                <label>
-                    <input type="submit"  class="btn btn-primary btn-lg active" name="submit" value="Submit">
-                </label>
+
+        <div class="pull-right">
+                    <input type="submit"  class="btn btn-red btn-lg" name="submit" value="Submit">
+        </div>
+
     </form>
 </div>
 </body>
