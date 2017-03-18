@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <style>
+    .big-td{
+      height: 74px ;
+      padding: 0 27px;
+
+
+    }
+    .small-td{
+      height: 35px !important;
+      padding: 0 27px !important;
+    }
+  </style>
 </head>
 <body>
 
-<table border="5" bordercolor="#FFE4C4" width="100%" cellpadding="27">
+<table  class="table table-striped" >
   <tr>
-  <th>Country</th><th>Capital</th><th>Country</th><th>Capital</th> 
+  <th class="thead-inverse">Country</th><th>Capital</th><th>Country</th><th>Capital</th>
   </tr>
   <tr>
-    <td align="center">Argenina</td><td align="center">Buenos Aires</td><td align="center">Guyana</td><td align="center">Georgetown</td> 
+    <td >Argenina</td><td >Buenos Aires</td><td >Guyana</td><td>Georgetown</td>
   </tr>
   <tr>
-  <td align="center">Bolivia</td><td align="center">La Paz</td><td align="center">Paraguay</td><td align="center">Asuncion</td>
+  <td rowspan="2" class="big-td">Bolivia</td><td class="big-td" rowspan="2">La Paz</td><td class="small-td">Paraguay</td><td class="big-td" rowspan="2">Asuncion</td>
   </tr>
   <tr>
-  <td align="center">Brazil</td><td align="center">Brasilia</td><td align="center">Peru</td><td align="center">Lima</td> 
+  <td class="small-td">Brasilia</td>
+  </tr>
+
+  <tr>
+    <td >Lima</td><td >Peru</td><td >Brazil</td><td >French Guiana</td>
   </tr>
   <tr>
-  <td align="center">Chile</td><td align="center">Santiago</td><td align="center">Surinam</td><td align="center">Paramaribo</td> 
+  <td >Chile</td><td >Santiago</td><td >Surinam</td><td >Paramaribo</td> 
   </tr>
   <tr>
-  <td align="center">Colombia</td><td align="center">Bogota</td><td align="center">Uruguay</td><td align="center">Montevideo</td> 
+  <td >Colombia</td><td >Bogota</td><td >Uruguay</td><td >Montevideo</td> 
   </tr>
   <tr>
-  <td align="center">Ecuador</td><td align="center">Quito</td><td align="center">Venezuela</td><td align="center">Caracas</td> 
+  <td >Ecuador</td><td >Quito</td><td >Venezuela</td><td >Caracas</td> 
   </tr>
   <tr>
-  <td align="center">French Guiana</td><td colspan="3" align="center">Cayenne</td>
+  <td colspan="4" >Cayenne</td>
   </tr>
 </table>
 <br>
